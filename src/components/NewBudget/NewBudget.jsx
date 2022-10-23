@@ -1,23 +1,19 @@
 import { useState } from "react";
 import Message from "../Message/Message";
 
-const NewBudget = ({ budget, setBudget }) => {
+const NewBudget = ({ budget, setBudget, setIsValidBudget }) => {
   const [msg, setMsg] = useState('');
 
   const handleBudget = (e) => {
     e.preventDefault();
     console.log(Number(budget))
 
-    // if(Number(budget) === NaN || Number(budget) < 0){
-    //   setMsg('no valid')
-    // }else{
-    //   setMsg('ok')
-    // }
-
-    if(budget !== NaN && budget >= 0){
-      setMsg('')
+    if(budget !== NaN && budget > 0){
+      setMsg('');
+      setIsValidBudget(true);
     }else{
       setMsg('no valid');
+      setIsValidBudget(false);
       return;
     }
     

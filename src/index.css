@@ -167,22 +167,22 @@ header h1 {
 
     transform: translateY(5rem);
 }
-.dos-columnas {
+.two-columns {
     flex-direction: column;
 }
-.dos-columnas :first-child {
+.two-columns :first-child {
     margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-    .dos-columnas {
+    .two-columns {
         flex-direction: row;
         align-items: center;
         gap: 4rem;
     }
-    .dos-columnas > div {
+    .two-columns > div {
         width: 50%;
     }
-    .dos-columnas :first-child {
+    .two-columns :first-child {
         margin-bottom: 0;
     }
 }
@@ -196,25 +196,25 @@ header h1 {
     width: 25rem;
 }
 
-.contenido-budget {
+.content-budget {
     width: 100%;
 }
-.contenido-budget p {
+.content-budget p {
     font-weight: 400;
     color: var(--gris-oscuro);
     font-size: 2.4rem;
     text-align: center;
 }
 @media (min-width: 768px) {
-    .contenido-budget p {
+    .content-budget p {
         text-align: left;
     }
 }
-.contenido-budget p.negativo,
-.contenido-budget p.negativo span {
+.content-budget p.negativo,
+.content-budget p.negativo span {
     color: red;
 }
-.contenido-budget span {
+.content-budget span {
     font-weight: 900;
     color: var(--azul);
 }
@@ -286,13 +286,13 @@ main {
     font-weight: 900;
 }
 
-.contenido-gasto {
+.content-gasto {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.contenido-gasto img {
+.content-gasto img {
     width: 10rem;
 }
 
