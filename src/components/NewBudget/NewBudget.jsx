@@ -12,7 +12,7 @@ const NewBudget = ({ budget, setBudget, setIsValidBudget }) => {
       setMsg('');
       setIsValidBudget(true);
     }else{
-      setMsg('no valid');
+      setMsg('presupuesto no válido');
       setIsValidBudget(false);
       return;
     }

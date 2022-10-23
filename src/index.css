@@ -259,19 +259,19 @@ main {
     background-color: var(--gris-claro);
 }
 
-.listado-gastos {
+.listado-expenses {
     margin-top: 5rem;
 }
-.listado-gastos h2 {
+.listado-expenses h2 {
     color: var(--gris-oscuro);
     font-weight: 900;
 }
-.no-gastos {
+.no-expenses {
     text-align: center;
     font-size: 2.2rem;
 }
 
-.gasto {
+.expense {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,61 +280,61 @@ main {
     width: 100%;
 }
 
-.cantidad-gasto {
+.quantity-expense {
     font-size: 2.4rem;
     color: var(--negro);
     font-weight: 900;
 }
 
-.content-gasto {
+.content-expense {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.content-gasto img {
+.content-expense img {
     width: 10rem;
 }
 
-.descripcion-gasto p {
+.descripcion-expense p {
     margin: 0 0 0.3rem 0;
 }
-.descripcion-gasto .categoria {
+.descripcion-expense .categoria {
     color: var(--gris);
     font-size: 1.6rem;
     font-weight: 900;
     text-transform: uppercase;
 }
-.descripcion-gasto p {
+.descripcion-expense p {
     margin-bottom: 1rem;
 }
-.descripcion-gasto .nombre-gasto {
+.descripcion-expense .nombre-expense {
     color: var(--gris-oscuro);
     font-size: 2.4rem;
     font-weight: 700;
 }
-.descripcion-gasto .nombre-gasto:hover {
+.descripcion-expense .nombre-expense:hover {
     cursor: pointer;
 }
-.descripcion-gasto .fecha-gasto {
+.descripcion-expense .fecha-expense {
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--gris-oscuro);
 }
-.descripcion-gasto .fecha-gasto span {
+.descripcion-expense .fecha-expense span {
     font-weight: 400;
 }
 
-.new-gasto {
+.new-expense {
     position: fixed;
     bottom: 5rem;
     right: 5rem;
 }
 
-.new-gasto img {
+.new-expense img {
     width: 5rem;
 }
-.new-gasto img:hover {
+.new-expense img:hover {
     cursor: pointer;
 }
 
@@ -346,14 +346,14 @@ main {
     right: 0;
     bottom: 0;
 }
-.modal .cerrar-modal {
+.modal .close-modal {
     position: absolute;
     right: 3rem;
     top: 3rem;
     width: 3rem;
     height: 3rem;
 }
-.modal .cerrar-modal img {
+.modal .close-modal img {
     width: 100%;
 }
 
@@ -377,7 +377,7 @@ body .modal {
     opacity: 1;
 }
 
-.modal .form.cerrar {
+.modal .form.close {
     opacity: 0;
 }
 
