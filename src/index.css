@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 :root {
-    --azul: #3b82f6;
-    --blanco: #ffffff;
-    --gris-claro: #f5f5f5;
-    --gris: #94a3b8;
-    --gris-oscuro: #64748b;
-    --negro: #000;
+    --blue: #3b82f6;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --gray: #94a3b8;
+    --dark-gray: #64748b;
+    --black: #000;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
-    background-color: var(--gris-claro);
+    background-color: var(--light-gray);
 }
 html {
     font-size: 62.5%;
@@ -40,19 +40,19 @@ h2 {
     box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
     -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
-    background-color: var(--blanco);
+    background-color: var(--white);
     padding: 4rem;
     border-radius: 1.2rem;
 }
 
 header {
-    background-color: var(--azul);
+    background-color: var(--blue);
 }
 
 header h1 {
     padding: 3rem 0;
     margin: 0;
-    color: var(--blanco);
+    color: var(--white);
     text-align: center;
 
     text-transform: uppercase;
@@ -74,10 +74,10 @@ header h1 {
     text-align: center;
     display: block;
     text-transform: uppercase;
-    color: var(--blanco);
+    color: var(--white);
     margin-bottom: 4rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--azul);
+    border-bottom: 2px solid var(--blue);
 }
 .form .field {
     display: grid;
@@ -85,7 +85,7 @@ header h1 {
 }
 
 .form label {
-    color: var(--azul);
+    color: var(--blue);
     font-size: 2.8rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -93,7 +93,7 @@ header h1 {
 
 .form input[type="text"],
 .form input[type="number"] {
-    background-color: var(--gris-claro);
+    background-color: var(--light-gray);
     border-radius: 1rem;
     padding: 1rem;
     border: none;
@@ -106,7 +106,7 @@ header h1 {
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
-    color: var(--blanco);
+    color: var(--white);
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.9rem;
@@ -130,7 +130,7 @@ header h1 {
     border: none;
     border-radius: 1rem;
     text-align: center;
-    background-color: var(--gris-claro);
+    background-color: var(--light-gray);
 }
 
 .alert {
@@ -143,12 +143,12 @@ header h1 {
     text-align: center;
 }
 .alert.error {
-    background-color: var(--blanco);
+    background-color: var(--white);
     border-left: 5px solid #b91c1c;
     color: #b91c1c;
 }
 .alert.success {
-    background-color: var(--blanco);
+    background-color: var(--white);
     border-left: 5px solid #09c350;
     color: #09c350;
 }
@@ -201,7 +201,7 @@ header h1 {
 }
 .content-budget p {
     font-weight: 400;
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
     font-size: 2.4rem;
     text-align: center;
 }
@@ -216,7 +216,7 @@ header h1 {
 }
 .content-budget span {
     font-weight: 900;
-    color: var(--azul);
+    color: var(--blue);
 }
 .reset-app {
     border: none;
@@ -224,7 +224,7 @@ header h1 {
     padding: 1rem;
     width: 100%;
     text-align: center;
-    color: var(--blanco);
+    color: var(--white);
     text-transform: uppercase;
     font-weight: 900;
     border-radius: 1rem;
@@ -248,7 +248,7 @@ main {
 .filtros label {
     font-size: 3rem;
     font-weight: 900;
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
 }
 .filtros select {
     flex: 1;
@@ -256,14 +256,14 @@ main {
     border: none;
     border-radius: 1rem;
     text-align: center;
-    background-color: var(--gris-claro);
+    background-color: var(--light-gray);
 }
 
 .listado-expenses {
     margin-top: 5rem;
 }
 .listado-expenses h2 {
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
     font-weight: 900;
 }
 .no-expenses {
@@ -282,7 +282,7 @@ main {
 
 .quantity-expense {
     font-size: 2.4rem;
-    color: var(--negro);
+    color: var(--black);
     font-weight: 900;
 }
 
@@ -300,7 +300,7 @@ main {
     margin: 0 0 0.3rem 0;
 }
 .descripcion-expense .categoria {
-    color: var(--gris);
+    color: var(--gray);
     font-size: 1.6rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -309,7 +309,7 @@ main {
     margin-bottom: 1rem;
 }
 .descripcion-expense .nombre-expense {
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
     font-size: 2.4rem;
     font-weight: 700;
 }
@@ -319,7 +319,7 @@ main {
 .descripcion-expense .fecha-expense {
     font-size: 1.8rem;
     font-weight: 900;
-    color: var(--gris-oscuro);
+    color: var(--dark-gray);
 }
 .descripcion-expense .fecha-expense span {
     font-weight: 400;
@@ -366,13 +366,13 @@ main {
     opacity: 0;
 }
 .modal label {
-    color: var(--blanco);
+    color: var(--white);
 }
 body .modal {
     overflow: hidden;
 }
 
-.modal .form.animar {
+.modal .form.animate {
     position: relative;
     opacity: 1;
 }
@@ -391,15 +391,15 @@ body .modal {
 
 /*** SWIPE LIST OVERRIDES **/
 .swipe-action__leading {
-    background-color: var(--azul);
-    color: var(--blanco);
+    background-color: var(--blue);
+    color: var(--white);
     margin-bottom: 2rem;
 }
 
 .swipe-action__trailing {
     background-color: #db2777;
     margin-bottom: 2rem;
-    color: var(--blanco);
+    color: var(--white);
 }
 
 .swipeable-list .swipe-action {
