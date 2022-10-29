@@ -24,7 +24,7 @@ html {
     box-sizing: inherit;
 }
 
-.fijar {
+.fix {
     overflow: hidden;
     height: 100vh;
 }
@@ -210,8 +210,8 @@ header h1 {
         text-align: left;
     }
 }
-.content-budget p.negativo,
-.content-budget p.negativo span {
+.content-budget p.negative,
+.content-budget p.negative span {
     color: red;
 }
 .content-budget span {
@@ -240,17 +240,17 @@ main {
     padding-top: 10rem;
 }
 
-.filtros .field {
+.filters .field {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.filtros label {
+.filters label {
     font-size: 3rem;
     font-weight: 900;
     color: var(--dark-gray);
 }
-.filtros select {
+.filters select {
     flex: 1;
     padding: 1rem;
     border: none;
@@ -259,10 +259,10 @@ main {
     background-color: var(--light-gray);
 }
 
-.listado-expenses {
+.list-expenses {
     margin-top: 5rem;
 }
-.listado-expenses h2 {
+.list-expenses h2 {
     color: var(--dark-gray);
     font-weight: 900;
 }
@@ -296,32 +296,32 @@ main {
     width: 10rem;
 }
 
-.descripcion-expense p {
+.description-expense p {
     margin: 0 0 0.3rem 0;
 }
-.descripcion-expense .categoria {
+.description-expense .category {
     color: var(--gray);
     font-size: 1.6rem;
     font-weight: 900;
     text-transform: uppercase;
 }
-.descripcion-expense p {
+.description-expense p {
     margin-bottom: 1rem;
 }
-.descripcion-expense .nombre-expense {
+.description-expense .name-expense {
     color: var(--dark-gray);
     font-size: 2.4rem;
     font-weight: 700;
 }
-.descripcion-expense .nombre-expense:hover {
+.description-expense .name-expense:hover {
     cursor: pointer;
 }
-.descripcion-expense .fecha-expense {
+.description-expense .date-expense {
     font-size: 1.8rem;
     font-weight: 900;
     color: var(--dark-gray);
 }
-.descripcion-expense .fecha-expense span {
+.description-expense .date-expense span {
     font-weight: 400;
 }
 
