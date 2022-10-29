@@ -1,10 +1,6 @@
-const BudgetControl = ({budget}) => {
-  const formatQuantity = (quant) => {
-    return quant.toLocaleString('es-ES', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  }
+import { formatQuantity } from "../../utils"
+
+const BudgetControl = ({ budget }) => {
 
   return (
     <div className="container-budget container shadow two-columns">

@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={!!modal && 'fix'}>
       <Header budget={budget} setBudget={setBudget} isValidBudget={isValidBudget} setIsValidBudget={setIsValidBudget} />
 
       {isValidBudget &&
