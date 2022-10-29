@@ -6,7 +6,6 @@ const NewBudget = ({ budget, setBudget, setIsValidBudget }) => {
 
   const handleBudget = (e) => {
     e.preventDefault();
-    console.log(Number(budget))
 
     if(budget !== NaN && budget > 0){
       setMsg('');
