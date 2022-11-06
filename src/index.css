@@ -25,6 +25,7 @@ html {
 }
 
 .fix {
+    max-height: 100vh;
     overflow: hidden;
     height: 100vh;
 }
@@ -355,6 +356,7 @@ main {
 }
 .modal .close-modal img {
     width: 100%;
+    cursor: pointer;
 }
 
 .modal .form {
