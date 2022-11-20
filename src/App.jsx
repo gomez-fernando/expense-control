@@ -6,11 +6,17 @@ import IconNewExpense from './img/icon_new_expense.svg'
 import ListExpenses from './components/ListExpenses/ListExpenses'
 
 function App() {
-  const [budget, setBudget] = useState(0);
+  const [budget, setBudget] = useState(
+    Number(localStorage.getItem('budget')) ?? 0
+  );
+
+  const [expenses, setExpenses] = useState(
+    localStorage.getItem('expenses') ? JSON.parse(localStorage.getItem('expenses')) : []
+  );
+
   const [isValidBudget, setIsValidBudget] = useState(false);
   const [modal, setModal] = useState(false);
   const [animateModal, setAnimateModal] = useState(false);
-  const [expenses, setExpenses] = useState([]);
   const [expenseEdit, setExpenseEdit] = useState({})
 
   useEffect(() => {
@@ -23,6 +29,19 @@ function App() {
     }
   }, [expenseEdit])
 
+  useEffect(() => {
+    localStorage.setItem('budget', budget ?? 0);
+  }, [budget])
+
+  useEffect(() => {
+    localStorage.setItem('expenses', JSON.stringify(expenses) ?? JSON.stringify([]));
+  }, [expenses])
+
+  useEffect(() => {
+    const lsBudget = Number(localStorage.getItem('budget')) ?? 0;
+
+    lsBudget > 0 && setIsValidBudget(true);
+  }, [])
 
   const handleNewExpense = () => {
     setModal(true);
