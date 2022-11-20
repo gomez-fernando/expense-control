@@ -4,6 +4,7 @@ import Modal from './components/Modal/Modal'
 import { generateId } from './utils'
 import IconNewExpense from './img/icon_new_expense.svg'
 import ListExpenses from './components/ListExpenses/ListExpenses'
+import Filters from './components/Filters/Filters'
 
 function App() {
   const [budget, setBudget] = useState(
@@ -17,7 +18,9 @@ function App() {
   const [isValidBudget, setIsValidBudget] = useState(false);
   const [modal, setModal] = useState(false);
   const [animateModal, setAnimateModal] = useState(false);
-  const [expenseEdit, setExpenseEdit] = useState({})
+  const [expenseEdit, setExpenseEdit] = useState({});
+  const [filter, setFilter] = useState('');
+  const [filteredExpenses, setFilteredExpenses] = useState([]);
 
   useEffect(() => {
     if (Object.keys(expenseEdit).length > 0) {
@@ -42,6 +45,13 @@ function App() {
 
     lsBudget > 0 && setIsValidBudget(true);
   }, [])
+
+  useEffect(() => {
+    if(filter) {
+      const filteredExpenses = expenses.filter(expense => expense.category === filter);
+      setFilteredExpenses(filteredExpenses)
+    }
+  }, [filter])
 
   const handleNewExpense = () => {
     setModal(true);
@@ -90,10 +100,16 @@ function App() {
       {isValidBudget &&
         <>
           <main>
+            <Filters
+              filter={filter}
+              setFilter={setFilter}
+            />
             <ListExpenses
               expenses={expenses}
               setExpenseEdit={setExpenseEdit}
               deleteExpense={deleteExpense}
+              filter={filter}
+              filteredExpenses={filteredExpenses}
             />
           </main>
           <div className="new-expense">
