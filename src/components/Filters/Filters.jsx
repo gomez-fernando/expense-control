@@ -7,7 +7,7 @@ const Filters = ({filter, setFilter}) => {
         <div className="field">
           <label>Filtrar gastos</label>
           <select value={filter} onChange={e => setFilter(e.target.value)}>
-            <option value="">-- Seleccione categoría --</option>
+            <option value="">Seleccione categoría</option>
             <option value="saving">Ahorro</option>
             <option value="food">Comida</option>
             <option value="home">Casa</option>
