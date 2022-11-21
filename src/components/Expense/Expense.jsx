@@ -60,7 +60,7 @@ const Expense = ({ expense, setExpenseEdit, deleteExpense }) => {
       >
         <div className="expense shadow">
           <div className="content-expense">
-            <img id="avoid-dragg" draggable="false" src={iconsDictionary[category]} alt={categoriesDictionary[category]} />
+            <img draggable="false" src={iconsDictionary[category]} alt={categoriesDictionary[category]} />
             <div className="description-expense">
               <p className="category">{categoriesDictionary[category]}</p>
               <p className="name-expense" >{name}</p>
