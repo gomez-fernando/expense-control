@@ -10,9 +10,11 @@ const ListExpenses = ({
   const activeExpenses = filter ? filteredExpenses : expenses;
   return (
     <div className="list-expenses container">
-      <h2>{activeExpenses.length ? 'Gastos' : `No hay gastos${
-        filter ? ' en esta categoría' : ' registrados'
-      }`}</h2>
+      <h2>{activeExpenses.length ? 'Gastos' : `No hay gastos${filter ? ' en esta categoría' : ' registrados'
+        }`}</h2>
+
+      <h4>{activeExpenses.length ? 'Deslizar Derecha (Editar), Izquierda (Eliminar)' : ``}
+      </h4>
 
       {activeExpenses.map(expense => (
         <Expense

@@ -264,7 +264,7 @@ main {
 .list-expenses {
     margin-top: 5rem;
 }
-.list-expenses h2 {
+.list-expenses h2, .list-expenses h4 {
     color: var(--dark-gray);
     font-weight: 900;
 }
